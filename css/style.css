@@ -12,8 +12,32 @@ h3{color:var(--navy)}
 /* Header */
 .cabecalho{background:rgba(6,39,69,.98);color:white;position:relative;z-index:3;box-shadow:0 6px 26px rgba(4,28,54,.13)}
 .navegacao{max-width:1248px;margin:auto;padding:17px 24px;display:flex;justify-content:space-between;align-items:center;gap:24px}
-.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.2;border-left:3px solid #49b5ff;padding-left:14px}.logo-nome{font-size:1.7rem;font-weight:800;letter-spacing:-.06em}.logo-subtitulo{font-size:.73rem;letter-spacing:.16em;color:#b7e0ff;margin-top:5px}
-.menu{padding:0;margin:0;display:flex;align-items:center;gap:8px;list-style:none}.menu li{list-style:none}.menu a{display:block;padding:12px 14px;text-decoration:none;border-radius:10px;font-size:.92rem;font-weight:700;color:#e1edf8;transition:background .25s,color .25s}.menu a:hover{background:rgba(255,255,255,.10);color:#fff}
+@media (max-width:480px){
+    .logo{
+        gap:10px;
+    }
+
+    .logo-icone{
+        width:44px;
+        height:44px;
+        border-radius:14px;
+    }
+
+    .logo-icone .icone-svg{
+        width:24px;
+        height:24px;
+    }
+
+    .logo-nome{
+        font-size:1.6rem;
+    }
+
+    .logo-subtitulo{
+        font-size:0.64rem;
+        letter-spacing:0.12em;
+        margin-top:4px;
+    }
+}.menu{padding:0;margin:0;display:flex;align-items:center;gap:8px;list-style:none}.menu li{list-style:none}.menu a{display:block;padding:12px 14px;text-decoration:none;border-radius:10px;font-size:.92rem;font-weight:700;color:#e1edf8;transition:background .25s,color .25s}.menu a:hover{background:rgba(255,255,255,.10);color:#fff}
 .menu-mobile{display:none}
 /* Hero */
 .banner{max-width:none;position:relative;background:radial-gradient(circle at 90% 6%,rgba(85,180,255,.19),transparent 34%),linear-gradient(120deg,#f3faff,#dceefa 62%,#f4faff);overflow:hidden;padding:102px 24px}
